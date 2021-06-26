@@ -63,6 +63,10 @@
     <Compile Include="StateDetail.cs" />
     <Compile Include="StateEdit.cs" />
     <Compile Include="StateListState.cs" />
+    <Compile Include="TrailCreate.cs" />
+    <Compile Include="TrailDetails.cs" />
+    <Compile Include="TrailEdit.cs" />
+    <Compile Include="TrailListTrail.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
