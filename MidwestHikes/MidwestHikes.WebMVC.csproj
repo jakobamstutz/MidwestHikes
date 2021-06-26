@@ -251,6 +251,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MidwestHikes.Data\MidwestHikes.Data.csproj">
+      <Project>{ea3193ec-3c94-4323-86cd-fd287482f345}</Project>
+      <Name>MidwestHikes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MidwestHikes.Models\MidwestHikes.Models.csproj">
+      <Project>{337181ec-9bbd-4b6d-8974-6f83f440a244}</Project>
+      <Name>MidwestHikes.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MidwestHikes.Services\MidwestHikes.Services.csproj">
+      <Project>{e33b6bd2-543b-4971-a5ec-205246990067}</Project>
+      <Name>MidwestHikes.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -55,6 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateCreate.cs" />
+    <Compile Include="StateDetail.cs" />
+    <Compile Include="StateEdit.cs" />
+    <Compile Include="StateListState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidwestHikes", "MidwestHikes\MidwestHikes.csproj", "{921815E6-4AD0-4E9C-8559-FE2BB958B5A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidwestHikes.WebMVC", "MidwestHikes\MidwestHikes.WebMVC.csproj", "{921815E6-4AD0-4E9C-8559-FE2BB958B5A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidwestHikes.Data", "MidwestHikes.Data\MidwestHikes.Data.csproj", "{EA3193EC-3C94-4323-86CD-FD287482F345}"
 EndProject
