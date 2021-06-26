@@ -54,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ParkCreate.cs" />
+    <Compile Include="ParkDetail.cs" />
+    <Compile Include="ParkEdit.cs" />
+    <Compile Include="ParkListPark.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateCreate.cs" />
     <Compile Include="StateDetail.cs" />
@@ -63,6 +67,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MidwestHikes.Data\MidwestHikes.Data.csproj">
+      <Project>{EA3193EC-3C94-4323-86CD-FD287482F345}</Project>
+      <Name>MidwestHikes.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
