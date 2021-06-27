@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MidwestHikes.Models
 {
-    class TrailListTrail
+    public class TrailListTrail
     {
         public int TrailId { get; set; }
         public string TrailName { get; set; }

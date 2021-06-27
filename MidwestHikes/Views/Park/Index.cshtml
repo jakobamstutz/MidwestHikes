@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MidwestHikes.Models.ParkListPark>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ParkId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParkName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParkDesc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParkDesc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ParkId  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.ParkId  }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.ParkId })
+        </td>
+    </tr>
+}
+
+</table>

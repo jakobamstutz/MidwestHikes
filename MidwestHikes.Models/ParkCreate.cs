@@ -10,12 +10,12 @@ namespace MidwestHikes.Models
 {
     public class ParkCreate
     {
-        [ForeignKey("State")]
+        //[ForeignKey("State")]
         public int StateId { get; set; }
         public string ParkName { get; set; }
         public string ParkDesc { get; set; }
 
-        public virtual List<trail> Trail { get; set; } = new List<trail>();
+       // public virtual List<trail> Trail { get; set; } = new List<trail>();
 
     }
 }

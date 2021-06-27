@@ -11,7 +11,7 @@ namespace MidwestHikes.Models
     {
         public int ParkId { get; set; }
 
-        [ForeignKey("State")]
+        //[ForeignKey("State")]
         public int StateId { get; set; }
         public string ParkName { get; set; }
         public string ParkDesc { get; set; }

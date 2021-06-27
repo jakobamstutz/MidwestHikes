@@ -15,9 +15,9 @@ namespace MidwestHikes.Data
 
         [ForeignKey("State")]
         public int StateId { get; set; }
+        public virtual state State { get; set; }
         public string ParkName { get; set; }
         public string ParkDesc { get; set; }
-        public virtual state State { get; set; }
         public virtual List<trail> Trail { get; set; }
 
     }

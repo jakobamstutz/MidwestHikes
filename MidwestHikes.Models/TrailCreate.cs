@@ -5,13 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace MidwestHikes.Models
 {
     public class TrailCreate
     {
-        [ForeignKey("Park")]
+        //[ForeignKey("Park")]
         public int ParkId { get; set; }
         public string TrailName { get; set; }
         public string TrailDesc { get; set; }
+
+       // public List<int> ListOfParks { get; set; }
     }
 }

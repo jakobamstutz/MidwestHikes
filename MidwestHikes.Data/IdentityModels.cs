@@ -32,6 +32,7 @@ namespace MidwestHikes.Data
             return new ApplicationDbContext();
         }
 
+        //pluralize database names
         public DbSet<state> State { get; set; }
         public DbSet<park> Park { get; set; }
         public DbSet<trail> Trail { get; set; }
