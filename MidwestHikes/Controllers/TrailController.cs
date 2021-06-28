@@ -1,4 +1,5 @@
-﻿using MidwestHikes.Models;
+﻿using MidwestHikes.Data;
+using MidwestHikes.Models;
 using MidwestHikes.Services;
 using System;
 using System.Collections.Generic;
@@ -18,8 +19,17 @@ namespace MidwestHikes.Controllers
         }
         public ActionResult Create()
         {
-            //call a method in service to return model
-            //receive view from service and return view with this model that includes list
+            ViewBag.Title = "New Trail";
+            List<park> GetParksList = (new ParkService()).GetParksList().ToList();
+
+            var query = from p in GetParksList
+                        select new SelectListItem()
+                        {
+                            Value = p.ParkId.ToString(),
+                            Text = p.ParkName
+                        };
+            ViewBag.ParkId = query.ToList();
+           
             return View();
         }
         [HttpPost]

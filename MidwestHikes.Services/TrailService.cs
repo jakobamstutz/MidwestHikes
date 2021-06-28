@@ -16,9 +16,6 @@ namespace MidwestHikes.Services
             _context = new ApplicationDbContext();
         }
 
-        //public TrailCreate GetCreateView(){}
-        //list = call to another method that returns a list of parkID
-        //Return this model to controller
         public bool CreateTrail(TrailCreate model)
         {
             var entity =
@@ -49,7 +46,8 @@ namespace MidwestHikes.Services
                                 new TrailListTrail
                                 {
                                     TrailId = e.TrailId,
-                                    TrailName = e.TrailName
+                                    TrailName = e.TrailName,
+                                    TrailDesc = e.TrailDesc
                                 });
                 return query.ToArray();
 

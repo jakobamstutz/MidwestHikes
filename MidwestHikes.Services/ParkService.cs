@@ -34,6 +34,13 @@ namespace MidwestHikes.Services
             }
         }
 
+        public IEnumerable<park> GetParksList()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                return ctx.Park.ToList();
+            }
+        }
         public IEnumerable<ParkListPark> GetParks()
         {
             using (var ctx = new ApplicationDbContext())

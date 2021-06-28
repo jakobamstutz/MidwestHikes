@@ -15,7 +15,9 @@ namespace MidwestHikes.Models
         public string ParkName { get; set; }
         public string ParkDesc { get; set; }
 
-       // public virtual List<trail> Trail { get; set; } = new List<trail>();
+        // public List<int> ListOfStates { get; set; }
+
+        // public virtual List<trail> Trail { get; set; } = new List<trail>();
 
     }
 }
