@@ -32,6 +32,13 @@ namespace MidwestHikes.Services
             }
         }
 
+        public IEnumerable<state> GetStatesList()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                return ctx.State.ToList();
+            }
+        }
         public IEnumerable<StateListState> GetStates()
         {
             using (var ctx = new ApplicationDbContext())

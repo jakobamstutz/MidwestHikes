@@ -1,4 +1,5 @@
-﻿using MidwestHikes.Models;
+﻿using MidwestHikes.Data;
+using MidwestHikes.Models;
 using MidwestHikes.Services;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,16 @@ namespace MidwestHikes.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.Title = "New Park";
+            List<state> GetStatesList = (new StateService()).GetStatesList().ToList();
+
+            var query = from s in GetStatesList
+                        select new SelectListItem()
+                        {
+                            Value = s.StateId.ToString(),
+                            Text = s.StateName
+                        };
+            ViewBag.StateId = query.ToList();
             return View();
         }
         [HttpPost]
