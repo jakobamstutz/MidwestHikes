@@ -29,8 +29,7 @@ namespace MidwestHikes.Controllers
                             Text = p.ParkName
                         };
             ViewBag.ParkId = query.ToList();
-            //call a method in service to return model
-            //receive view from service and return view with this model that includes list
+           
             return View();
         }
         [HttpPost]
