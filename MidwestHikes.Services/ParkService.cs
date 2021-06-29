@@ -52,6 +52,7 @@ namespace MidwestHikes.Services
                             e =>
                                 new ParkListPark
                                 {
+                                    StateName = e.State.StateName,
                                     ParkId = e.ParkId,
                                     ParkName = e.ParkName,
                                     ParkDesc = e.ParkDesc
@@ -68,7 +69,6 @@ namespace MidwestHikes.Services
                 var entity =
                     ctx
                         .Park
-                
                         .Single(e => e.ParkId == id);
                 return
                             new ParkDetail
