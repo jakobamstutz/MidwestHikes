@@ -1,21 +1,24 @@
 ﻿@model IEnumerable<MidwestHikes.Models.StateListState>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "State";
 }
 
-<h2>Index</h2>
+<h2>View or add a State</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add a State", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.StateId)
+            State Id
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.StateName)
+            State Name
+        </th>
+        <th>
+            Options
         </th>
         <th></th>
     </tr>

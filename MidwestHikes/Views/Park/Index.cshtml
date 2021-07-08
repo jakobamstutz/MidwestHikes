@@ -1,24 +1,27 @@
 ﻿@model IEnumerable<MidwestHikes.Models.ParkListPark>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Parks";
 }
 
-<h2>Index</h2>
+<h2>View and recommend parks</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add a Park", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.StateName)
+            State Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ParkName)
+            Park Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ParkDesc)
+            Park Description
+        </th>
+        <th>
+            Options
         </th>
         <th></th>
     </tr>

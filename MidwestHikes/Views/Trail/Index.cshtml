@@ -1,24 +1,27 @@
 ﻿@model IEnumerable<MidwestHikes.Models.TrailListTrail>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Trails";
 }
 
-<h2>Index</h2>
+<h2>View and reccommend trails</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add a Trail", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ParkName)
+            Park Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TrailName)
+            Trail Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TrailDesc)
+            Trail Description
+        </th>
+        <th>
+            Options
         </th>
         <th></th>
     </tr>
