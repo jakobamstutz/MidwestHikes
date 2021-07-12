@@ -45,6 +45,7 @@ namespace MidwestHikes.Services
                             e =>
                                 new TrailListTrail
                                 {
+                                    ParkName = e.Park.ParkName,
                                     TrailId = e.TrailId,
                                     TrailName = e.TrailName,
                                     TrailDesc = e.TrailDesc
